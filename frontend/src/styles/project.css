@@ -1,0 +1,13 @@
+.project-link{
+  margin:0 auto;
+  
+}
+
+.project-img{
+  width:80%;
+     -webkit-box-shadow: 4px 5px 15px -5px #000000;
+  box-shadow: 4px 5px 15px -5px #000000;
+  color:rgba(22, 17, 17, 0.733);
+  border-radius:10px;
+  
+}

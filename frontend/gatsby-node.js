@@ -17,6 +17,17 @@ exports.createPages = async ({ graphql, actions }) => {
               gatsbyImageData
             }
           }
+          projectLink
+          _id
+          _rawProjectDescription
+          projectDescription {
+            children {
+              text
+              marks
+              _type
+              _key
+            }
+          }
         }
       }
     }

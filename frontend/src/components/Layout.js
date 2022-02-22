@@ -8,23 +8,36 @@ const Wrapper = styled.main`
   `
 
   const Nav = styled.nav`
-  border-bottom:1px solid #ccc
+  width:100%;
+  height:50px;
+  margin:0;
+  background:transparent;
+  position:absolute;
+  display:flex;
+  justify-content:flex-end;
+  z-index:1000;
+  background:black;
+  
   `
 
   const LinkItem = styled(Link)`
-  font-size:1.2rem;
-  color:#333;
+  font-size:1rem;
+  font-weight:600;
+  color:white;
   text-decoration:none;
-  margin:0 1rem;
+  margin:auto 2rem;
   `
+
+  
 
 const Layout = ({children}) =>{
     return(
         <Wrapper>
             <Nav>
-                <LinkItem to="/">Home</LinkItem>
-                <LinkItem to="/project">projects</LinkItem>
-                <LinkItem to="/services">services</LinkItem>
+                    <LinkItem to="/">Home</LinkItem>
+                    <LinkItem to="/project">projects</LinkItem>
+                    <LinkItem to="/services">services</LinkItem>
+               
             </Nav>
             {children}
         </Wrapper>

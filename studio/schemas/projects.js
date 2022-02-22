@@ -17,18 +17,26 @@ export default{
                 source:"myProjectName"
             },
         },
-        { title:'project-link',
+        { 
+            title:'project-link',
             name:'projectLink',
             type:'url',
            
         },
-       { title:'graphic',
-        name:'graphic',
-        type:'image',
-        options:{
-            hotspot:true
+        {   title:'graphic',
+            name:'graphic',
+            type:'image',
+            options:{
+                hotspot:true
+        }
+    },
+        {
+        title:'project-description',
+        name:'projectDescription',
+        type:'array',
+        of:[{type:'block'}]
         },
-    }, 
+    
     
     ]
 }
