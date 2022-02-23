@@ -91,6 +91,8 @@ const PortofolioButton = styled.button`
 `;
 
 function Header() {
+
+    console.log(process.env.SANITY_PROJECT_ID);
   return (
     <Heading>
       <PortfolioButtonWrapper>
