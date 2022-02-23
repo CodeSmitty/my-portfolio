@@ -11,8 +11,9 @@ module.exports = {
     {
       resolve: "gatsby-source-sanity",
       options: {
-        projectId: `${process.env.SANITY_PROJECT_ID}`,
+        projectId: process.env.SANITY_PROJECT_ID,
         dataset: "production",
+        graphqlTag: "default",
       },
     },
     "gatsby-plugin-styled-components",
